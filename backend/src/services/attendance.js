@@ -159,9 +159,6 @@ export async function updateAttendance(attendanceId, status) {
     if (!record) {
       throw new Error('Attendance record not found');
     }
-    if (record.enrollment_status !== 'active') {
-      throw new Error('Cannot update attendance for completed enrollment');
-    }
     if (record.status === status) {
       await conn.commit();
       return { changed: false };

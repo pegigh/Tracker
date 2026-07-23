@@ -106,7 +106,7 @@ export default function SettingsPage() {
       <MobileSection title="شروع ماه جدید" className="month-reset-zone">
         <div className="settings-action">
           <Text size="2" color="gray" mb="3" as="p">
-            سوابق حضور پاک می‌شود. نام دانش‌آموزان می‌ماند.
+            سوابق حضور پاک می‌شود. نام شاگردان می‌ماند.
           </Text>
           <ConfirmSheet
             title="شروع ماه جدید؟"
@@ -133,7 +133,7 @@ export default function SettingsPage() {
           </Text>
           <ConfirmSheet
             title="پاک کردن همه؟"
-            description="دانش‌آموزان و سوابق برای همیشه حذف می‌شوند."
+            description="شاگردان و سوابق برای همیشه حذف می‌شوند."
             confirmLabel="بله، پاک کن"
             onConfirm={async () => {
               await api.clearAllHistory();

@@ -65,13 +65,13 @@ export default function StudentsPage() {
         <Dialog.Root open={open} onOpenChange={setOpen}>
           <Dialog.Trigger>
             <button type="button" className="btn-mobile btn-black">
-              <IconPlus /> دانش‌آموز جدید
+              <IconPlus /> شاگرد جدید
             </button>
           </Dialog.Trigger>
           <Dialog.Content>
             <div className="mobile-sheet-wrap">
               <div className="sheet-handle" />
-              <Dialog.Title>ثبت‌نام دانش‌آموز</Dialog.Title>
+              <Dialog.Title>ثبت‌نام شاگرد</Dialog.Title>
               <form onSubmit={handleAdd}>
                 <MobileSection>
                   <div className="form-field">
@@ -80,7 +80,7 @@ export default function StudentsPage() {
                       value={name}
                       onChange={(e) => setName(e.target.value)}
                       required
-                      placeholder="نام دانش‌آموز"
+                      placeholder="نام شاگرد"
                       size="3"
                     />
                   </div>
@@ -108,7 +108,7 @@ export default function StudentsPage() {
       <div className="content-grid">
         <MobileSection title={`فعال (${active.length})`}>
           {active.length === 0 ? (
-            <EmptyState title="دانش‌آموزی نیست" subtitle="از دکمه بالا ثبت کنید" />
+            <EmptyState title="شاگردی نیست" subtitle="از دکمه بالا ثبت کنید" />
           ) : (
             active.map((s) => (
               <MobileListItem

@@ -7,14 +7,14 @@ import { IconCheck, IconUsers, IconChart, IconSettings } from './components/Icon
 
 const PAGES = {
   '/': { title: 'حضور امروز', subtitle: 'ثبت حضور و غیاب' },
-  '/students': { title: 'دانش‌آموزان', subtitle: 'مدیریت ثبت‌نام' },
+  '/students': { title: 'شاگردان', subtitle: 'مدیریت ثبت‌نام' },
   '/reports': { title: 'گزارش', subtitle: 'وضعیت جلسات' },
   '/settings': { title: 'تنظیمات', subtitle: 'تم و تاریخچه' },
 };
 
 const NAV = [
   { to: '/', label: 'حضور', Icon: IconCheck },
-  { to: '/students', label: 'دانش‌آموزان', Icon: IconUsers },
+  { to: '/students', label: 'شاگردان', Icon: IconUsers },
   { to: '/reports', label: 'گزارش', Icon: IconChart },
   { to: '/settings', label: 'تنظیمات', Icon: IconSettings },
 ];

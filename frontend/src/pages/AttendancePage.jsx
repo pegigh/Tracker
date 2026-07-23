@@ -52,13 +52,13 @@ function AddStudentSheet({ classDayId, onMarked }) {
     <Dialog.Root open={open} onOpenChange={setOpen}>
       <Dialog.Trigger>
         <button type="button" className="btn-mobile btn-outline">
-          <IconPlus /> دانش‌آموز جدید
+          <IconPlus /> شاگرد جدید
         </button>
       </Dialog.Trigger>
       <Dialog.Content>
         <div className="mobile-sheet-wrap">
           <div className="sheet-handle" />
-          <Dialog.Title>دانش‌آموز جدید</Dialog.Title>
+          <Dialog.Title>شاگرد جدید</Dialog.Title>
           <form onSubmit={handleSubmit}>
             <MobileSection className="mt-3">
               <div className="form-field">
@@ -67,7 +67,7 @@ function AddStudentSheet({ classDayId, onMarked }) {
                   value={name}
                   onChange={(e) => setName(e.target.value)}
                   required
-                  placeholder="نام دانش‌آموز"
+                  placeholder="نام شاگرد"
                   size="3"
                 />
               </div>
@@ -257,7 +257,7 @@ export default function AttendancePage() {
         <div className="grid-col">
       <MobileSection title={`لیست روز (${attendance.length})`}>
         {attendance.length === 0 ? (
-          <EmptyState title="لیست خالیه" subtitle="دانش‌آموز را حاضر یا غایب کنید" />
+          <EmptyState title="لیست خالیه" subtitle="شاگرد را حاضر یا غایب کنید" />
         ) : (
           attendance.map((a) => (
             <MobileListItem

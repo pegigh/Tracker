@@ -13,7 +13,7 @@ router.delete('/history/month', async (_req, res) => {
     await conn.commit();
     res.json({
       ok: true,
-      message: 'ماه جدید شروع شد — دانش‌آموزان حفظ شدند',
+      message: 'ماه جدید شروع شد — شاگردان حفظ شدند',
     });
   } catch (err) {
     await conn.rollback();
